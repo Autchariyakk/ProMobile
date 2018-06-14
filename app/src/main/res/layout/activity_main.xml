@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/tv2"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        />
+    <Button
+        android:layout_weight="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:id="@+id/tv2"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:text="Tel"
+        android:id="@+id/tv3"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:text="gender"
+        android:id="@+id/tv4"
+        android:padding="15dp"
+        />
+
+    <CheckBox
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_toEndOf="@+id/tv4"
+
+        />
+
+   <CheckBox
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="135dp"
+       android:id="@+id/tv6"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_below="@+id/tv3"
+        android:layout_toEndOf="@+id/tv5"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv4"
+        android:layout_marginStart="-135dp"
+        android:layout_toEndOf="@+id/tv6"
+        android:text="Female" />
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv5"
+        android:id="@+id/tv7"
+        >
+    </CalendarView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_alignBottom="@+id/tv7"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
